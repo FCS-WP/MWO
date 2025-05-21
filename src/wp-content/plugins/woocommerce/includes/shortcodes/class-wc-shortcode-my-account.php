@@ -306,13 +306,13 @@ class WC_Shortcode_My_Account {
 		}
 
 		if ( ! $user_data ) {
-			wc_add_notice( __( 'Invalid username or email.', 'woocommerce' ), 'error' );
+			wc_add_notice( __( 'If the provided credentials is associated with an account, you’ll receive a password reset link shortly.', 'woocommerce' ), 'error' );
 
 			return false;
 		}
 
 		if ( is_multisite() && ! is_user_member_of_blog( $user_data->ID, get_current_blog_id() ) ) {
-			wc_add_notice( __( 'Invalid username or email.', 'woocommerce' ), 'error' );
+			wc_add_notice( __( 'If the provided credentials is associated with an account, you’ll receive a password reset link shortly.', 'woocommerce' ), 'error' );
 
 			return false;
 		}
