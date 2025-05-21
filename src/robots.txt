@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /wishlist/
+Disallow: /order-received/
+Disallow: /track-your-order/
+Disallow: /add-to-cart=*
+Disallow: /?add-to-cart=*
+
+# These disallows prevent indexing of backend files
+Disallow: /wp-content/cache/
+Disallow: /wp-content/themes/
+Disallow: /wp-content/plugins/
+
+# Allow necessary AJAX
+Allow: /wp-admin/admin-ajax.php
